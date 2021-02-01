@@ -5,7 +5,7 @@ with open("./README.md", 'r', encoding="utf-8") as fh:
 
 setuptools.setup(
     name="DW",
-    version="0.0.1",
+    version="0.0.2",
     author="Drew Ipson",
     author_email="drewipson@gmail.com",
     description="A small python package full of useful methods for data cleaning and manipulation.",

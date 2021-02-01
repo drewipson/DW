@@ -1,7 +1,5 @@
+import re, string
 class DataWrangler():
-
-    def __init__(self):
-        import re, string
 
     def remove_pii(self, text: str, pii: list):
         """
