@@ -5,6 +5,13 @@ A simple python package with convenient methods for data cleaning and transforma
 ## DataWrangler
 The DataWrangler class includes the following methods. A detailed description and example can be viewed in the table below.
 
+### Installation and Use
+
+#### Importing the package for use.
+`from DW import DataWrangler`
+` DW = DataWrangler()`
+
+### Method Descriptions and Examples
 |Methods               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Example                                                                                                                 | 
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 |remove_pii            | A list called pii_info is compiled as a regular expression pattern that is used to remove sensitive information. A cleaned string called no_pii is returned with the removed PII.                                                                                                                                                                                                                                                                                                             |`remove_pii(text="This is a string of personable identifiable information (pii): Drew Ipson", pii: ['Drew', 'Ipson'])`   |

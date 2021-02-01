@@ -4,7 +4,7 @@ with open("./README.md", 'r', encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="DataWrangler-data.dr3w-ipso_n",
+    name="DW-data.dr3w-ipso_n",
     version="0.0.1",
     author="Drew Ipson",
     author_email="drewipson@gmail.com",
