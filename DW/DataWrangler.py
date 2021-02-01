@@ -1,5 +1,4 @@
-import pandas as pd
-import spacy, re, json, string
+import re, string
 
 class DataWrangler():
 
