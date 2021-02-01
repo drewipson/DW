@@ -3,7 +3,7 @@
 A simple python package with convenient methods for data cleaning and transformations.
 
 ## DataWrangler
-The DataWrangler class includes the following methods. A detailed description and example can be viewed in the table below.
+The DataWrangler class includes the following methods. A detailed description and example can be viewed in the table below. The majority of the methods are used for somewhat intermediate string and regex manipulations that I've built out to avoid doing so in the future.
 
 ### Installation and Use
 
