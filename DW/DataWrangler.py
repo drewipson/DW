@@ -1,4 +1,4 @@
-import re, string
+import re, string, os
 class DataWrangler():
 
     def remove_pii(self, text: str, pii: list):
@@ -22,7 +22,7 @@ class DataWrangler():
         rear spacing. The insert_space method is used if a space should exist where there is none -- front or back.
         """
         # checks for front space
-        if desc[word_start_index-1].isspace() is False:
+        if text[word_start_index-1].isspace() is False:
             new_text = self.insert_space(text, word_start_index)
             # checks for rear space in addition to front string rear_space variable is incremented by one in nested if statement to accomodate the new space inserted up front
             if new_text[word_end_index + 1].isspace() is False:
@@ -98,3 +98,10 @@ class DataWrangler():
                 if keep_headers:
                     current_out_writer.writerow(headers)
             current_out_writer.writerow(row)
+    
+    def list_to_file(self, list_object: list, filename: str, output_filepath: str = './'):
+        """
+        Writes list data type object to file for list storage. Filepath is a string argument to 
+        """
+        with open(os.path.join(output_filepath, filename), 'w') as fh:
+            fh.writelines("%s\n" % list_item for list_item in list_object)
